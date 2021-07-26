@@ -10,27 +10,27 @@
     <title>Weather Dashboard App</title>
 </head>
 <body>
-    <header class="hero">
+    <header class="hero bg-success">
         <h1 class="app-title">
             Weather Dashboard
         </h1>
     </header>
 
- <main class="container-fluid">
+ <main class="container-fluid bg-success">
      <div class="row">
         <div class="col-12 col-lg-3">
+            <h3>Search for a City</h3>
             <div class="card">
                 <div class="card-body">
                     <div id="user-form" class="input-group mb-3">
                         <input type="text" id="city-input" class="form-control" placeholder="Enter a City" aria-label="City" aria-describedby="button-addon2">
-                        <button class="searchBtn btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                        <button class="searchBtn btn btn-success btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
                       </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <div class="btn-group-vertical btn-block">
-                        <!-- <button type="button" class="btn btn-success">Success</button> -->
+                    <div id="btn-group" class="btn-group-vertical btn-block">
                     </div>
                 </div>
             </div>
@@ -38,58 +38,59 @@
         <div class="col-12 col-lg-9">
             <div class="card">
                 <div class="card-body">
-                    <h2>city name</h2>
-                    <p>temp</p>
-                    <p>humidity</p>
-                    <p>wind speed</p>
-                    <p>uv</p>
+                    <h2><span id="name">City</span> (<span id="date"></span>) <img id="cur-icon" src="" alt=""></h2>
+                    <p>Temperature: <span id="temp"></span> <span>&#176</span>F</p>
+                    <p>Humidity: <span id="humid"></span> <span>&#37</span></p>
+                    <p>Wind Speed: <span id="wind"></span><span> MPH</span></p>
+                    <!-- UV DATA was retired on 1st April 2021 and only available by calling the lat/long - too complicated for me! -->
+                    <!-- <p id="uv">uv</p> -->
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <div class="row">
-                        <h3>5 Day Forecast:</h3>
+                    <div class="row card-body">
+                        <h2>5 Day Forecast:</h2>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row forecast-container">
+                        <div class="card forecast">
                             <div class="card-body">
-                                <h4>date</h4>
-                                <p><span>icon</span></p>
-                                <p>temp</p>
-                                <p>humidity</p>
+                                <h4 id="1date">date</h4>
+                                <img id="1icon" src="" alt="">
+                                <p>Temp: <span id="1temp"></span> <span>&#176</span>F</p>
+                                <p>Humidity: <span id="1humid"></span> <span>&#37</span></p>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
-                                <h4>date</h4>
-                                <p><span>icon</span></p>
-                                <p>temp</p>
-                                <p>humidity</p>
+                            <div class="card-body forecast">
+                                <h4 id="2date">date</h4>
+                                <img id="2icon" src="" alt="">
+                                <p>Temp: <span id="2temp"></span> <span>&#176</span>F</p>
+                                <p>Humidity: <span id="2humid"></span> <span>&#37</span></p>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
-                                <h4>date</h4>
-                                <p><span>icon</span></p>
-                                <p>temp</p>
-                                <p>humidity</p>
+                            <div class="card-body forecast">
+                                <h4 id="3date">date</h4>
+                                <img id="3icon" src="" alt="">
+                                <p>Temp: <span id="3temp"></span> <span>&#176</span>F</p>
+                                <p>Humidity: <span id="3humid"></span> <span>&#37</span></p>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
-                                <h4>date</h4>
-                                <p><span>icon</span></p>
-                                <p>temp</p>
-                                <p>humidity</p>
+                            <div class="card-body forecast">
+                                <h4 id="4date">date</h4>
+                                <img id="4icon" src="" alt="">
+                                <p>Temp: <span id="4temp"></span> <span>&#176</span>F</p>
+                                <p>Humidity: <span id="4humid"></span> <span>&#37</span></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card forecast">
                             <div class="card-body">
-                                <h4>date</h4>
-                                <p><span>icon</span></p>
-                                <p>temp</p>
-                                <p>humidity</p>
+                                <h4 id="5date">date</h4>
+                                <img id="5icon" src="" alt="">
+                                <p>Temp: <span id="5temp"></span> <span>&#176</span>F</p>
+                                <p>Humidity: <span id="5humid"></span> <span>&#37</span></p>
                             </div>
                         </div>
                     </div>

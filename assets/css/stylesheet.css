@@ -1,3 +1,11 @@
+root {
+  --darkgreen: #37782c;
+  --pistachio: #9FD983;
+  --cream:#FEFED3;
+  --moonstone: #3CB3C0;
+  --ateneoblue: #024064;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -5,4 +13,41 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+h3 {
+  color:#FEFED3;
+}
+
+h4 {
+  text-align: center;
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+  color: #FEFED3;
 }  
+
+.card {
+  margin: 0 0 10px 0;
+  background-color: #FEFED3;
+}
+.searchBtn {
+  color: white;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.forecast-container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.forecast {
+  background-color: #3CB3C0;
+}
+
