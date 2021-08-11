@@ -4,6 +4,9 @@ Coding Bootcamp Homework Week #5 - use HTML, CSS and JavaScript to program a wea
 ## Link to Live Application
 https://lvaillancourt8.github.io/Weather-Dashboard/
 
+## Technologies Used
+HTML, CSS, Javascript, Bootstrap
+
 ## User Story
 
 ```
@@ -32,3 +35,11 @@ THEN I am again presented with current and future conditions for that city
 
 The following image shows the web application's appearance and functionality:
 ![Weather-Dashboard-Screenshot](https://user-images.githubusercontent.com/55712456/127245626-d1dad768-b269-4605-acdb-76345fa2571a.png)
+
+## License
+
+Licensed under [MIT License}(LICENSE)
+
+## Contact
+
+Leslie Vaillancourt - classvaillan@gmail.com
